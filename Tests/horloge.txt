@@ -1,0 +1,6 @@
+i = 0 
+tantq i inf 60 alors 
+date
+attendre 1
+i = i + 1
+fintq 

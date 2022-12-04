@@ -1,0 +1,15 @@
+fonction Syracuse(x)
+tab[] = []
+tantq x dif 1 alors 
+ajouter tab arrondir(x) 
+si x % 2 eg 0 alors 
+x = x / 2
+sinon
+x = 3 * x + 1
+finsi
+fintq
+# tab
+ff
+
+x = @
+Syracuse(x)

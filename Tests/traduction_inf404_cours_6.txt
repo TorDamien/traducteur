@@ -1,0 +1,68 @@
+fonction recAff()
+
+Ast <- initAst()
+v <- 0
+
+si natureLexEnCour() eg IDF alors
+idf <- ChaineLexEnCour()
+avancer()
+sinon 
+erreur()
+finsi
+
+si natureLexEnCour() eg AFF alors
+avancer()
+sinon
+erreur()
+finsi
+
+recEag(Ast)
+v <- evaluer(Ast)
+inserer(idf,v)
+
+si natureLexEnCour() eg SEPAFF alors
+avancer()
+sinon
+erreur()
+finsi
+
+ff
+
+
+fonction recFacteur(Ast)
+
+v <- 0
+trouve <- :(
+
+ 
+si natureLexEnCour() eg ENTIER alors
+Ast = creerFeuille(ValeurLexEnCour())
+avancer()
+retourne 0
+finsi 
+
+si natureLexEnCour() eg PARO alors
+avancer()
+recEag(Ast)
+si natureLexEnCour() eg PARF alors
+avancer()
+sinon
+erreur()
+finsi
+retourne 0
+finsi
+
+si natureLexEnCour() eg IDF alors
+trouve = chercher(ChaineLexEnCour(),v)
+si trouve eg :) alors
+Ast = creerFeuille(v)
+sinon
+erreur()
+finsi
+avancer()
+retourne 0
+finsi
+
+erreur()
+retourne 1
+ff

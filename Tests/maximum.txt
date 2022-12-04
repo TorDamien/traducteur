@@ -1,0 +1,12 @@
+fonction maximum(x,y)
+si x eg y alors
+retourne x
+sinon
+retourne y
+finsi
+ff
+
+val1 = 1
+val2 = 5
+max = maximum(val1,val2)
+# !Le plus grand nombre est:! , max

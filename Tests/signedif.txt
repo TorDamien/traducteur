@@ -1,0 +1,18 @@
+fonction signedif(a,b)
+si a eg 0 ou b eg 0 alors
+retourne :(
+finsi
+si a supstr 0 et b infstr 0 alors 
+retourne :)
+finsi 
+si b supstr 0 et a infstr 0 alors 
+retourne :)
+sinon
+retourne :(
+finsi 
+ff
+
+# !Entrez 2 nombres, renvoie vrai si ils sont de même signe et qu'aucun est nul!
+x = @
+y = @
+# signedif(x,y)

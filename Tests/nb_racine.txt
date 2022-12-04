@@ -1,0 +1,17 @@
+fonction nbracine(a,b,c)
+delta = (b^2) - (4 * a * c)
+si delta supstr 0 alors
+retourne 2 
+finsi 
+si delta infstr 0 alors 
+retourne 0
+sinon 
+retourne 1
+finsi 
+ff 
+
+# !Entrez a,b,c les 3 facteurs de votre équations du second degrés!
+a = @
+b = @
+c = @
+# !L'équation!, a, !x^2 +!,b,!x +!,c,!à!,nbracine(a,b,c),!racines réelles!

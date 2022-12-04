@@ -1,0 +1,14 @@
+fonction riemann(alpha,num)
+somme := 0
+tantq num supstr 0 alors
+somme := somme + 1 / (num ^ alpha)
+num := num - 1
+fintq
+retourne somme
+ff
+
+# !Entrez l'alpha, puis le nombre d'éléments!
+alpha = @
+num = @
+# arrondir(num), !eme élément de la suite de Riemann d'alpha!,alpha, ! : ! ,riemann(alpha,num)
+

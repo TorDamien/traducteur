@@ -1,0 +1,22 @@
+fonction factoriellequidepasse(max)
+i = 1 
+tantq factorielle(i) inf max alors 
+i = i + 1 
+fintq
+retourne i-1
+ff
+
+fonction factorielle(x)
+total = 1 
+tantq x supstr 0 alors
+total = total * x
+x = x - 1 
+fintq 
+retourne total
+ff 
+
+# !Entrez la valeur max à ne pas dépasser!
+max = arrondir(@)
+nb = factoriellequidepasse(max)
+# !La valeur!,nb,!est le dernier nombre dont le factorielle ne dépasse pas!, max
+# !Le factorielle de!, nb, !a pour valeur!, factorielle(nb)

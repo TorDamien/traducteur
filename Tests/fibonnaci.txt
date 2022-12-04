@@ -1,0 +1,16 @@
+fonction fibonacci(nb)
+e0 = 0
+e1 = 1
+resultat[] = [e0, e1]
+tantq nb - 2 supstr 0 alors
+tmp = e1
+e1 = e0 + e1
+e0 = tmp
+ajouter resultat e1 
+nb = nb - 1 
+fintq
+retourne resultat
+ff 
+
+# !Entrez le nombre d'éléments attendus! 
+# fibonacci(@)

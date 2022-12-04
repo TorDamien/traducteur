@@ -1,0 +1,18 @@
+fonction moyenne(tab)
+i = 0
+total = 0
+tantq i infstr taille(tab) alors 
+total = total + tab[i]
+i = i + 1 
+fintq
+retourne total / taille(tab)
+ff
+
+tab[] = []
+# !Entrez autant de valeur que voulu, et -1 pour conclure!
+x = @
+tantq x dif (0-1) alors
+ajouter tab x
+x = @
+fintq
+# !Moyenne du tableau:!, tab, ! = !, moyenne(tab)
